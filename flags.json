@@ -1,0 +1,16 @@
+{
+  "debug": {
+    "weather": true,
+    "garden-sun": true,
+    "garden-size": true,
+    "season-explorer": true,
+    "plant-details": true
+  },
+  "release": {
+    "weather": false,
+    "garden-sun": false,
+    "garden-size": false,
+    "season-explorer": false,
+    "plant-details": false
+  }
+}
