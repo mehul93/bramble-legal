@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bramble Support</title>
+<meta name="description" content="Help with the Bramble gardening app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap">
+<style>
+  /* Layout: one readable column, a "short version" card up top, then plain numbered-free sections a user can scan. */
+  :root {
+    --bg: #FFFFFF;
+    --surface: #F7F4F1;
+    --tint: #FBEEE7;
+    --ink: #222222;
+    --muted: #6B6560;
+    --faint: #9A928B;
+    --line: #ECE7E2;
+    --brand: #B2603E;
+    --mark-bg: #FFF1C9;
+    --mark-fg: #5C4300;
+    --font: "Onest", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --measure: 40rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15130F; --surface: #211D16; --tint: #2B2018; --ink: #F5F0E6; --muted: #B3A99B;
+      --faint: #847A6C; --line: #2F2A21; --brand: #D9784F; --mark-bg: #4A3A10; --mark-fg: #FFE6A3;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15130F; --surface: #211D16; --tint: #2B2018; --ink: #F5F0E6; --muted: #B3A99B;
+    --faint: #847A6C; --line: #2F2A21; --brand: #D9784F; --mark-bg: #4A3A10; --mark-fg: #FFE6A3;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-inline: 1.25rem;
+    padding-block: 2.5rem 4rem;
+  }
+  main { max-width: var(--measure); margin-inline: auto; display: flex; flex-direction: column; gap: 2.5rem; }
+
+  header { display: flex; flex-direction: column; gap: 0.5rem; }
+  .wordmark { font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; color: var(--brand); }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.4rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+  .updated { color: var(--faint); font-size: 0.875rem; margin: 0; }
+  .lede { color: var(--muted); margin: 0.25rem 0 0; }
+
+  .summary { background: var(--tint); border-radius: 1rem; padding: 1.25rem 1.4rem; }
+  .summary h2 { margin-top: 0; }
+  .summary ul { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.4rem; }
+
+  section { display: flex; flex-direction: column; gap: 0.75rem; }
+  h2 { font-size: 1.25rem; line-height: 1.3; letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+  h3 { font-size: 1rem; margin: 0.5rem 0 0; }
+  p { margin: 0; }
+  ul { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem; }
+  a { color: var(--brand); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 2px; }
+  code { font-size: 0.9em; background: var(--surface); padding: 0.1em 0.35em; border-radius: 0.3em; }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 0.75rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 0.925rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--line); }
+  th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--surface); font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 600; width: 28%; }
+
+  .fill { background: var(--mark-bg); color: var(--mark-fg); border-radius: 0.3em; padding: 0 0.3em; font-weight: 600; }
+  .note { font-size: 0.875rem; color: var(--faint); }
+  footer { border-top: 1px solid var(--line); padding-top: 1.25rem; color: var(--faint); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="wordmark">Bramble</div>
+    <h1>Help and support</h1>
+    <p class="lede">Questions, problems or ideas for Bramble? Email <a href="mailto:mehul.h.mandalia@gmail.com">mehul.h.mandalia@gmail.com</a> and you'll get a reply from Mehul, who makes the app. In the app, <strong>Profile › Help &amp; feedback</strong> starts an email with your app version and device already filled in.</p>
+  </header>
+
+  <section aria-labelledby="premium">
+    <h2 id="premium">Premium and subscriptions</h2>
+    <h3>Restore Premium on a new phone</h3>
+    <p>Open any Premium feature to see the upgrade screen, then tap <strong>Restore purchase</strong>. Use the same Apple Account you subscribed with.</p>
+    <h3>Cancel or change your subscription</h3>
+    <p>Subscriptions are managed by Apple. On your iPhone, open <strong>Settings</strong>, tap your name, then <strong>Subscriptions › Bramble</strong>. Cancelling keeps Premium until the end of the period you've paid for.</p>
+    <h3>Redeem a code</h3>
+    <p>On the upgrade screen, tap <strong>Redeem a code</strong> and enter it. After any free period, the subscription renews at the normal price unless you cancel.</p>
+    <h3>Refunds</h3>
+    <p>Purchases are made through the App Store, so refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+  </section>
+
+  <section aria-labelledby="reminders">
+    <h2 id="reminders">Reminders</h2>
+    <h3>Reminders aren't arriving</h3>
+    <p>Check that notifications are allowed in iPhone <strong>Settings › Notifications › Bramble</strong>, and that the reminder types you want are on in Bramble's <strong>Profile › Notifications</strong>. Reminders arrive at 8am on the day a task is due.</p>
+  </section>
+
+  <section aria-labelledby="data">
+    <h2 id="data">Your garden and data</h2>
+    <h3>Where is my garden stored?</h3>
+    <p>On your phone. There's no account, so your plants, notes and photos aren't stored anywhere else. They're included in your iPhone's iCloud or computer backups if those are on.</p>
+    <h3>Moving to a new phone</h3>
+    <p>Restore your new iPhone from a backup of the old one and your garden comes with it.</p>
+    <h3>Deleting your data</h3>
+    <p>Deleting Bramble removes everything from your phone. The <a href="../privacy/">privacy policy</a> explains the anonymous usage data Bramble collects and how to turn it off or have it deleted.</p>
+  </section>
+</main>
+</body>
+</html>

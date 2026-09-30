@@ -1,7 +1,8 @@
-# Bramble legal pages
+# Bramble public pages
 
-Public pages for the Bramble iOS app, served by GitHub Pages.
+Served by GitHub Pages for the Bramble iOS app.
 
+- Support: https://mehul93.github.io/bramble-legal/support/
 - Privacy policy: https://mehul93.github.io/bramble-legal/privacy/
 
-The source is `bramble/Legal/privacy-policy.html` in the app repo; publish changes with `scripts/publish-privacy-policy.sh` there.
+Generated from the app repo (`bramble/Legal/privacy-policy.html`, `web/support.html`) by `scripts/publish-web-pages.sh`; edit them there.
