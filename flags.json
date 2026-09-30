@@ -1,7 +1,7 @@
 {
   "debug": {
     "weather": true,
-    "garden-sun": true,
+    "garden-sun": false,
     "garden-size": true,
     "season-explorer": true,
     "plant-details": true
