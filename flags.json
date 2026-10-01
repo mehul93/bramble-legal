@@ -7,7 +7,7 @@
     "plant-details": true
   },
   "release": {
-    "weather": false,
+    "weather": true,
     "garden-sun": false,
     "garden-size": false,
     "season-explorer": false,
