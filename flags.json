@@ -4,13 +4,17 @@
     "garden-sun": true,
     "garden-size": true,
     "season-explorer": true,
-    "plant-details": true
+    "plant-details": true,
+    "custom-plants": true,
+    "companions": true
   },
   "release": {
     "weather": true,
     "garden-sun": false,
     "garden-size": false,
     "season-explorer": false,
-    "plant-details": false
+    "plant-details": false,
+    "custom-plants": false,
+    "companions": false
   }
 }
