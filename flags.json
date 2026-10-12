@@ -6,7 +6,9 @@
     "season-explorer": true,
     "plant-details": true,
     "custom-plants": true,
-    "companions": true
+    "companions": true,
+    "greenkeeper": true,
+    "task-actions": true
   },
   "release": {
     "weather": true,
@@ -15,6 +17,8 @@
     "season-explorer": false,
     "plant-details": false,
     "custom-plants": false,
-    "companions": false
+    "companions": false,
+    "greenkeeper": false,
+    "task-actions": false
   }
 }
